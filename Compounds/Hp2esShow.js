@@ -55,11 +55,8 @@ function showper(){
 }
 
 document.addEventListener('keydown', (event) => {
-    if (event.key === 'p' && event.ctrlKey) {
-        showper();
-    }
+    if (event.key === 'p' && event.ctrlKey) showper();
 });
-
 
     return (
         <div>

@@ -1,0 +1,4 @@
+# Este archivo es para ignorar carpetas con archivos innecesarios
+
+.vscode
+node_modules

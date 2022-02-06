@@ -19,34 +19,34 @@ export default function Dashboard() {
     }
   }
 
-  document.body.style = 'background: #1f2a37;';
+  document.body.style = "background: #1f2a37;"
 
   return (
     <>
-    <div className="grid items-center justify-center h-screen">
-          <Card className="w-30">
-            <Card.Body>
-              <h2 className="text-center mb-4">Enter Website!</h2>
-              <Link to="/bookshelf" className="btn btn-primary w-100 mt-3">
-                Enter
-              </Link>
-            </Card.Body>
-          </Card>
-          <Card className="w-30">
-            <Card.Body>
-              <h2 className="text-center mb-4">Profile</h2>
-              {error && <Alert variant="danger">{error}</Alert>}
-              <strong>Email:</strong> {currentUser.email}
-              <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
-                Update Profile
-              </Link>
-            </Card.Body>
-          </Card>
-          <div className="w-100 text-center mt-2">
-            <Button variant="link" onClick={handleLogout}>
-              Log Out
-            </Button>
-          </div>
+      <div className="grid items-center justify-center h-screen">
+        <Card className="w-30">
+          <Card.Body>
+            <h2 className="text-center mb-4">Enter Website!</h2>
+            <Link to="/bookshelf" className="btn btn-primary w-100 mt-3">
+              Enter
+            </Link>
+          </Card.Body>
+        </Card>
+        <Card className="w-30">
+          <Card.Body>
+            <h2 className="text-center mb-4">Profile</h2>
+            {error && <Alert variant="danger">{error}</Alert>}
+            <strong>Email:</strong> {currentUser.email}
+            <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
+              Update Profile
+            </Link>
+          </Card.Body>
+        </Card>
+        <div className="w-100 text-center mt-2">
+          <Button variant="link" onClick={handleLogout}>
+            Log Out
+          </Button>
+        </div>
       </div>
     </>
   )
